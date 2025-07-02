@@ -200,3 +200,10 @@ Các loại Physics Overlap trong Unity
 | `Physics2D.OverlapPoint`     | 2D                | Kiểm tra **một điểm** có nằm trong Collider2D nào không      | Dùng để kiểm tra click chuột, chạm vào vị trí cụ thể                                  |
 | `Physics2D.OverlapArea`      | 2D                | Kiểm tra collider nằm trong vùng **hình chữ nhật** 2D         | Xác định 2 điểm góc để tạo vùng kiểm tra                                              |
 
+#### 17. Sự khác nhau giữa Vector.right và transform.right là gì?
+- Vector.right: vector tĩnh, tương đương (1,0,0) trong world space, luôn hướng bên phải toàn cục, không phụ thuộc rotation thằng nào.
+- transform.right: vector động, lấy hướng bên phải của object, dựa trên rotation hiện tại của object đó.
+
+#### 18. Làm sao để enemy phát hiện được nhân vật trong tầm nhìn của mình
+- Cho tầm nhìn của enemy 1 trigger Collider.
+- Khi nhân vật va chạm vào trigger thì setTarget của enemy hiện tại là nhân vật vừa va chạm.
